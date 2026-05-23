@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: backend
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: boto3>=1.40.43
+Requires-Dist: clerk-backend-api>=3.3.1
+Requires-Dist: fastapi>=0.118.0
+Requires-Dist: numpy>=2.2.6
+Requires-Dist: openai>=1.109.1
+Requires-Dist: pillow>=11.3.0
+Requires-Dist: pydantic>=1.10.24
+Requires-Dist: python-dotenv>=1.1.1
+Requires-Dist: python-multipart>=0.0.20
+Requires-Dist: requests>=2.32.5
+Requires-Dist: sqlalchemy>=2.0.43
+Requires-Dist: torch>=2.8.0
+Requires-Dist: torchvision>=0.23.0
+Requires-Dist: ultralytics>=8.3.204
+Requires-Dist: uvicorn>=0.37.0
