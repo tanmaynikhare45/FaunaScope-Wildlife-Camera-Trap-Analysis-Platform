@@ -1,0 +1,69 @@
+/* index.css - global styles and Tailwind v4 import */
+@import "tailwindcss";
+
+/* Custom global variables - Wildlife Theme */
+:root {
+  --primary-color: #16a34a; /* Forest green */
+  --secondary-color: #059669; /* Emerald green */
+  --accent-color: #0d9488; /* Teal */
+  --error-color: #dc2626;
+  --text-color: #1f2937;
+  --bg-color: #f0fdf4; /* Very light green */
+  --border-color: #bbf7d0; /* Light green border */
+  --card-bg: #ffffff;
+  --shadow-color: rgba(34, 197, 94, 0.1);
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: var(--text-color);
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 50%, #bbf7d0 100%);
+  position: relative;
+}
+
+/* Wildlife-themed background pattern */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(circle at 20% 80%, rgba(34, 197, 94, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(16, 185, 129, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(5, 150, 105, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Slider helper classes */
+.slider-container {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.slider-content {
+  display: flex;
+  gap: 16px;
+  white-space: nowrap;
+}
