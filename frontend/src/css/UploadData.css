@@ -1,0 +1,196 @@
+/* UploadData.css - Wildlife Theme */
+
+/* Wildlife Background Pattern */
+.upload-wildlife-bg {
+  position: relative;
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 50%, #bbf7d0 100%);
+}
+
+.upload-wildlife-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(circle at 20% 80%, rgba(34, 197, 94, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(16, 185, 129, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(5, 150, 105, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Wildlife Path Patterns */
+.upload-wildlife-paths {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.upload-wildlife-paths svg {
+  width: 100%;
+  height: 100%;
+  color: hsl(var(--primary));
+}
+
+.upload-wildlife-paths path {
+  stroke: currentColor;
+  stroke-width: 0.5;
+  stroke-opacity: 0.08;
+  opacity: 0.3;
+  animation: wildlifePathFlow 20s linear infinite;
+}
+
+@keyframes wildlifePathFlow {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 100;
+  }
+}
+
+/* Tabs */
+.upload-tabs {
+  @apply border-b-2;
+  border-color: #bbf7d0;
+}
+
+/* File / Folder Upload Buttons */
+.upload-button {
+  @apply flex items-center gap-2 px-4 py-2 rounded-md text-white transition-all duration-300;
+  background: linear-gradient(135deg, #16a34a, #059669);
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
+}
+
+.upload-button:hover {
+  background: linear-gradient(135deg, #15803d, #047857);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(34, 197, 94, 0.4);
+}
+
+.upload-clear {
+  @apply px-4 py-2 rounded-md transition-all duration-300;
+  border: 2px solid #16a34a;
+  color: #16a34a;
+  background: transparent;
+}
+
+.upload-clear:hover {
+  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+  color: #15803d;
+  transform: translateY(-1px);
+}
+
+/* File Previews */
+.file-preview {
+  @apply relative rounded p-2 flex items-center gap-2 transition-all duration-300;
+  border: 2px solid #bbf7d0;
+  background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
+  box-shadow: 0 2px 8px rgba(34, 197, 94, 0.1);
+}
+
+.file-preview:hover {
+  border-color: #16a34a;
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.2);
+  transform: translateY(-2px);
+}
+
+.file-preview img {
+  @apply w-32 h-32 object-contain rounded;
+  border: 2px solid #bbf7d0;
+}
+
+.file-preview .error-box {
+  @apply hidden w-32 h-32 flex items-center justify-center border rounded;
+  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+  color: #16a34a;
+  border: 2px solid #bbf7d0;
+}
+
+/* Uploaded Files */
+.uploaded-file-card {
+  @apply p-2 rounded transition-all duration-300;
+  background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
+  border: 2px solid #bbf7d0;
+  box-shadow: 0 2px 8px rgba(34, 197, 94, 0.1);
+}
+
+.uploaded-file-card:hover {
+  border-color: #16a34a;
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.2);
+  transform: translateY(-2px);
+}
+
+.uploaded-file-card img {
+  @apply w-full max-h-60 object-contain rounded;
+  border: 2px solid #bbf7d0;
+}
+
+/* Prediction display wrapper */
+.prediction-wrapper {
+  @apply flex flex-col gap-2;
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  border: 2px solid #bbf7d0;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.1);
+}
+
+/* Upload Page Container */
+.upload-container {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 50%, #bbf7d0 100%);
+  padding: 0;
+  margin: 0;
+}
+
+.upload-container::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(circle at 20% 80%, rgba(34, 197, 94, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(16, 185, 129, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(5, 150, 105, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Upload Section Styling */
+.upload-section {
+  position: relative;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(15px);
+  border: 2px solid #bbf7d0;
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px rgba(34, 197, 94, 0.15);
+  margin: 1rem 0;
+  padding: 2rem;
+}
+
+/* Wildlife-themed form elements */
+.upload-form {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(240, 253, 244, 0.9) 100%);
+  border: 2px solid #bbf7d0;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.upload-form:hover {
+  border-color: #16a34a;
+  box-shadow: 0 6px 20px rgba(34, 197, 94, 0.2);
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(240, 253, 244, 0.95) 100%);
+}

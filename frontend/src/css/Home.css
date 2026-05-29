@@ -1,0 +1,104 @@
+/* Home.css - Wildlife Theme */
+
+/* Hero Section */
+.home-hero {
+  @apply relative py-24 md:pb-32 lg:pb-36 lg:pt-72 overflow-hidden;
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 50%, #bbf7d0 100%);
+}
+
+.home-hero h1 {
+  @apply mt-8 text-5xl md:text-6xl lg:mt-16 xl:text-7xl font-bold;
+  background: linear-gradient(135deg, #16a34a, #059669, #0d9488);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.home-hero p {
+  @apply mt-8 text-lg max-w-2xl;
+  color: #166534;
+}
+
+/* Hero Buttons */
+.home-hero .btn {
+  @apply h-12 rounded-full text-base px-5;
+}
+
+.home-hero .btn-primary {
+  @apply text-white;
+  background: linear-gradient(135deg, #16a34a, #059669);
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
+  transition: all 0.3s ease;
+}
+
+.home-hero .btn-primary:hover {
+  background: linear-gradient(135deg, #15803d, #047857);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(34, 197, 94, 0.4);
+}
+
+.home-hero .btn-ghost {
+  @apply bg-transparent;
+  border: 2px solid #16a34a;
+  color: #16a34a;
+  transition: all 0.3s ease;
+}
+
+.home-hero .btn-ghost:hover {
+  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+  color: #15803d;
+  transform: translateY(-1px);
+}
+
+/* Partners / Logos */
+.partners-section p {
+  @apply text-sm text-right;
+  color: #166534;
+}
+
+/* Feature Cards */
+.features-section {
+  @apply py-20 lg:py-32;
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 50%, #bbf7d0 100%);
+}
+
+.features-section h2 {
+  @apply text-3xl md:text-5xl font-bold mb-4 text-center;
+  background: linear-gradient(135deg, #16a34a, #059669);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.features-section p {
+  @apply text-lg max-w-2xl mx-auto;
+  color: #166534;
+}
+
+.feature-card {
+  @apply rounded-2xl p-6 border shadow-sm hover:shadow-md transition-all duration-300;
+  background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
+  border: 2px solid #bbf7d0;
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.1);
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(34, 197, 94, 0.2);
+  border-color: #16a34a;
+}
+
+.feature-card .icon {
+  @apply w-12 h-12 rounded-lg flex items-center justify-center mb-4;
+  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+  color: #16a34a;
+}
+
+.feature-card h3 {
+  @apply text-xl font-semibold mb-2;
+  color: #166534;
+}
+
+.feature-card p {
+  color: #15803d;
+}
