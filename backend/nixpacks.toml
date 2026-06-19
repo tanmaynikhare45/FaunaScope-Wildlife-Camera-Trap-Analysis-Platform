@@ -1,0 +1,5 @@
+[phases.install]
+cmds = [
+  "pip install torch==2.8.0+cpu torchvision==0.23.0+cpu --index-url https://download.pytorch.org/whl/cpu",
+  "pip install ."
+]
