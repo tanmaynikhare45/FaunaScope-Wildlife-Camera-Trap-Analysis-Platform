@@ -1,4 +1,4 @@
-# TrapSense AI - Wildlife Camera Trap Analysis Platform
+# FaunaScope AI - Wildlife Camera Trap Analysis Platform
 
 <div align="center">
 
@@ -30,7 +30,7 @@ Wildlife researchers and conservationists face the monumental challenge of proce
 
 ##  Our Solution
 
-TrapSense AI is a comprehensive platform that combines cutting-edge computer vision with modern web technologies to deliver:
+FaunaScope AI is a comprehensive platform that combines cutting-edge computer vision with modern web technologies to deliver:
 
 ### Core Capabilities
 - **Smart Detection**: AI automatically identifies animals, humans, and vehicles in camera trap images
@@ -127,7 +127,7 @@ TrapSense AI is a comprehensive platform that combines cutting-edge computer vis
 ## Project Structure
 
 ```
-IIIT_M/
+faunascope/
 ├── frontend/                 # React frontend application
 │   ├── src/
 │   │   ├── components/      # Reusable UI components
@@ -171,7 +171,7 @@ IIIT_M/
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd IIIT_M
+   cd faunascope
    ```
 
 2. **Backend Setup**
